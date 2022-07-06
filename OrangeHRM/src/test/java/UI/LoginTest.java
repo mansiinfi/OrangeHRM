@@ -17,8 +17,9 @@ public class LoginTest {
 	@BeforeMethod
 	public void SetUp() {
 
-		driver = new ChromeDriver();
-		WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "/home/mansi/Downloads/Driver/chromedriver_linux64/chromedriver");
+		 driver = new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -41,8 +42,6 @@ public class LoginTest {
 		} else
 			System.out.println("Test Failed");
 	}
-
-	
 
 	@AfterMethod
 	public void tearDown() {
