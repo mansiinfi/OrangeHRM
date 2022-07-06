@@ -14,6 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class LoginTest {
 	WebDriver driver;
 
+	@SuppressWarnings("deprecation")
 	@BeforeMethod
 	public void SetUp() {
 

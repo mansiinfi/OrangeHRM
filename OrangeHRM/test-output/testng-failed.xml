@@ -6,8 +6,8 @@
       <class name="UI.LoginTest">
         <methods>
           <include name="Logintest"/>
-          <include name="tearDown"/>
           <include name="SetUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- UI.LoginTest -->
     </classes>
