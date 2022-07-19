@@ -17,7 +17,7 @@ public class LoginTest {
 	@BeforeMethod
 	public void SetUp() {
 
-		System.setProperty("webdriver.chrome.driver", "/home/mansi/Downloads/Driver/chromedriver_linux64/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 		 driver = new ChromeDriver();
 		//WebDriverManager.chromedriver().setup();
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
